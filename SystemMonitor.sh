@@ -34,9 +34,9 @@ monitor_cpu() {
 # 
 
 send_email() {
-    recipient="shaulk@omc.co.il"
+    recipient=""
     subject="System Monitoring Report"
-    sender="shaulk@omc.co.il"
+    sender=""
     monitoring_info=$(echo -e "System Monitoring Report:\n$(monitor_mem)\n$(monitor_disk)\n$(monitor_cpu)")
     echo -e "$monitoring_info" | mail -s "$subject" -r "$sender" "$recipient"
 }
