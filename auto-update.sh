@@ -1,9 +1,9 @@
 #!/bin/bash
 
-echo "Updating package lists and upgrading installed packages"
+echo "Updating and upgrading"
 apt update && sudo apt upgrade -y
 
-echo "Cleaning up unnecessary files..."
+echo "Cleaning up..."
 sudo apt autoremove -y
 sudo apt autoclean
 
